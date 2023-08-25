@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'MyFont22';
+	src: url(misaki_gothic.ttf) format("truetype");
+}
+
+
+span {
+	font-family: "MyFont22" !important;
+	
+}
+
+img {
+	width: 100%;
+}
+@media (max-width: 410px ) {}
+@media screen and (min-width: 768px) {}
