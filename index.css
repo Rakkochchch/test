@@ -17,7 +17,14 @@ img {
 	text-align: center;
 }
 
-
+a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	 /* other browsers */
+	display: inline;
+	width: 20%;
+	
+  }
 body {
     
     color: #212529;
@@ -49,8 +56,8 @@ ul {
 }
 
 .sns {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 .nes-container.is-rounded.is-dark {
     border-image-slice: 3;
@@ -85,13 +92,7 @@ a {
 	justify-content: center;
 	gap: 6px;
   }
-  .copytxt {
-	margin: 0px;
-	font-size: 70px;
-	font-weight: bold;
-	display: inline-block;
-	
-  }
+
   
 
 
@@ -105,7 +106,7 @@ a {
 @media screen and (min-width:768px) and ( max-width:1024px) {
 
 .followme{
-	width: 900px;
+	width: 800px;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -140,6 +141,17 @@ footer {
     height: 100px;
   }
 
+  .head_name {
+    margin: 0;
+    font-size: 25;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    background-color: #000000;
+    letter-spacing: 10px;
+    border: 4px solid #ffffff;
+    border-radius: 13px;
+	display: inline-block;
+}
 
   .head_name {
 	
@@ -166,6 +178,17 @@ body {
 .ggg{
 	font-size: 50px;
 }
+
+.copytxt {
+	margin: 0px;
+	font-size: 70px;
+	font-weight: bold;
+	display: inline-block;
+	
+  }
+  .gg{
+	display: none;
+  }
 }
 
 
@@ -173,6 +196,97 @@ body {
 
 @media screen and (min-width:1024px) {
 .name{
-		font-size: 67px;
+		font-size: 30px;
+		
 	}
+
+	.ggg{
+		font-size: 20px;
+	}
+	
+
+	
+.followme{
+	width: 500px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #11131f; /* フッターの背景色を設定 */
+    text-align: center;
+    padding: -px; /* 適切なパディングを設定 */
+    color: aliceblue;
+    padding-top: 4px;
+    color: aliceblue;
+    border-top: 5px solid #ffffff;
+
+
+  }
+  ul{
+    font-size: 35px;
+  }
+  .sns {
+    width: 70px;
+    height: 70px;
+    
+  }
+  .sns{
+    vertical-align: bottom;
+  }
+  .svgfile{
+    width: 130px;
+    height: 100px;
+  }
+
+  .head_name {
+    margin: 0;
+    font-size: 25;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    background-color: #000000;
+    letter-spacing: 10px;
+    border: 4px solid #ffffff;
+    border-radius: 13px;
+	display: inline-block;
+}
+
+  .head_name {
+	
+    margin: 0;
+	color: #ffffff;
+    font-size: 110px;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    background-color: #000000;
+    letter-spacing: 10px;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+	margin-bottom: 90px;
+}
+body {
+    font-size: 1px;
+    text-align: center;
+}
+#typed-sample5{
+	font-size: 30px !important;
+	margin-bottom: 50px !important;
+}
+.copytxt {
+	margin: 0px;
+	font-size: 30px;
+	font-weight: bold;
+	display: inline-block;
+	
+  }
+
+
+  .ggg{
+	display: none;
+	font-size: 20px;
+}
+
 }
