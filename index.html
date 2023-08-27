@@ -16,12 +16,25 @@
 
   <link rel="stylesheet" type="text/css" href="index.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+
+
 </head>
 <body>
-&nbsp;
+
+<header class="header">
+  <p class="head_name">TOBE<img class="svgfile" src="game_controller_gray.svg" alt="" >CONTINUE</p>
+</header>
+
+
+<p class="ggg">&nbsp;</p>
 <div id="q_01"onclick="type2in()">
 <a  id="btnb" class="typebtn" href="#q_02">
 <div class="name" >
+
     <img id="type1-in" src="picture\35_20230826014247.png">
         <div class="nes-container w-full is-dark is-rounded text-center" 
             style="border-image-repeat: stretch; width: 100% !important; text-align: center;"> 
@@ -30,7 +43,6 @@
 </div>
 </a>
 </div>
-    &nbsp;&nbsp;
 
 <div id="q_02" style="display: none;" onclick="type3in()">
 <a  id="btnb" class="typebtn" href="#q_03">
@@ -44,7 +56,7 @@
 </a>
 </div>
 
-&nbsp;&nbsp;
+
 <div id="q_03" style="display: none;"onclick="type4in()">
 <a  id="btnb" class="typebtn" href="#q_04">
 <div class="name">
@@ -57,7 +69,7 @@
 </a>
 
 </div>
-&nbsp;&nbsp;
+
 
 <div id="q_04" style="display: none;" onclick="type5in()">
   <a  id="btnb" class="typebtn" href="#q_05">
@@ -66,12 +78,13 @@
     <div class="nes-container w-full is-dark is-rounded text-center"
         style="border-image-repeat: stretch; width: 100% !important; text-align: center;">
       <span id="typed-sample4"></span>
+     
   
     </div>
   </div>
 </a>
 </div>
-&nbsp;&nbsp;
+
 
 <div id="q_05" style="display: none;" onclick="type6in()">
   <a  id="btnb" class="typebtn" href="#q_06">
@@ -80,19 +93,14 @@
     <div class="nes-container w-full is-dark is-rounded text-center"
         style="border-image-repeat: stretch; width: 100% !important; text-align: center;">
       <span id="typed-sample5"></span>
-  
+      <p class="ggg">&nbsp;</p>
     </div>
 </div>
 </a>
 </div>
 
 
-&nbsp;&nbsp;
 
-
-
-
-&nbsp;&nbsp;
 
 <div id="q_06" style="display: none;" onclick="type7in()">
   <a  id="btnb" class="typebtn" href="#q_07">
@@ -106,11 +114,8 @@
 </div>
 </a>
 </div>
-&nbsp;&nbsp;
 
 
-
-&nbsp;&nbsp;
 <div id="q_07" style="display: none;" onclick="type8in()"> 
   <a  id="btnb" class="typebtn typeend" href="#q_07">
 <div class="name">
@@ -128,8 +133,15 @@
 
 
 
-
-
+<footer>
+  <img class="followme" src="sns\23_20230816152013.png">
+        <ul class="sns_box">
+          <li><a class="" onclick="clickDisplayAlert()"><img class="sns" src="sns\sns_twitter.png"></a></li>
+          <li><a class=""><img class="sns" src="sns\sns_instagram.png"></a></li>
+          <li><a class="" href="https://shs.kyoto-art.ac.jp/"><img class="sns" src="sns\25_20230820112222.png"></a></li>
+        </ul>
+<p class="copytxt">&copy; 2023 文化祭実行委員会</p>
+</footer>
   
 
 
