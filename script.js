@@ -1,3 +1,6 @@
+
+
+
 function typede(typedeid,type_name){
 
     var typed = new Typed(typedeid, {
@@ -8,8 +11,6 @@ function typede(typedeid,type_name){
     loop: false,
     smartBackspace: true,
     });
-    
-    
     }
 
 
@@ -45,7 +46,7 @@ function type5in(){
 }
 function type6in(){
     typede("#typed-sample6","みんながそうおもったとき　3にんの　ゆうきあるせんしがたちあがった！！　そのなを　ゆうしゃ　ヒーラー　魔法使い　\nはたしてかれらは　ぶじ　スタンプを　さがしだすことができるのであろうか？")
-    applyMosaicInAnimation('#type6-in', 12000, 5);
+    applyMosaicInAnimation('#type6-in', 9000, 5);
 }
 function type7in(){
     typede("#typed-sample7","3にんは　ふあんときぼうをむねにひめ　いま　たびだつことをけついした!　勇敢なるせんしたちよ　ぜひこの国をまもってくれ！！")
@@ -53,8 +54,10 @@ function type7in(){
 
 }
 
+function typebody(){
+    applyMosaicInAnimation('#typebody-in', 1200, 5);
 
-
+}
 
 
 
@@ -87,3 +90,6 @@ document.querySelectorAll(".typebtn").forEach(button => {
         }
     });
 });
+
+
+
