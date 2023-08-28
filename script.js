@@ -1,6 +1,8 @@
 
 
 
+
+
 function typede(typedeid,type_name){
 
     var typed = new Typed(typedeid, {
@@ -91,5 +93,21 @@ document.querySelectorAll(".typebtn").forEach(button => {
     });
 });
 
+
+document.getElementById("mainclass").style.display ="block";
+  function clickDisplayAlert() {
+    const p1 = document.getElementById("main22");
+    const p2 = document.getElementById("twitterclass");
+    if(p1.style.display=="block"){
+		// noneで非表示
+		p1.style.display ="none";
+    p2.style.display ="block";
+    }else{
+      // blockで表示
+      p1.style.display ="block";
+      p2.style.display ="none";
+    }
+      
+  }
 
 
