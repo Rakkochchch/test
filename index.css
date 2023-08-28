@@ -18,7 +18,7 @@ img {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: rgb(255, 255, 255);
 	 /* other browsers */
 	display: inline;
@@ -28,7 +28,7 @@ a {
 body {
     
     color: #212529;
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	font-family: "MyFont22" !important;
     
 
@@ -59,14 +59,11 @@ ul {
     width: 60px;
     height: 60px;
 }
-.nes-container.is-rounded.is-dark {
-    border-image-slice: 3;
-    border-image-width: 9;
-}
+
 
 
 a {
-	text-decoration: none !important;
+	text-decoration: none;
 	color: rgb(255, 255, 255);
 	 /* other browsers */
 	display: inline;
@@ -92,25 +89,29 @@ a {
 	justify-content: center;
 	gap: 6px;
   }
+  .copytxt {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+  }
 
+
+  @media (max-width: 320px ) {
+    .name{
+      font-size: 30px !important;
+    }
+    .copytxt {
+      font-size: 20px;
+    }
+
+  }
   
+  
+  
+  @media screen and (max-width: 767px) {
 
 
-
-
-@media screen and (min-width:480px) { 
-.name{
-		font-size: 69px;
-	}
-}
-@media screen and (min-width:768px) and ( max-width:1024px) {
-
-.followme{
-	width: 800px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-footer {
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -125,168 +126,94 @@ footer {
 
 
   }
-  ul{
-    font-size: 35px;
-  }
-  .sns {
-    width: 100px;
-    height: 100px;
-    
-  }
+
   .sns{
+
     vertical-align: bottom;
   }
-  .svgfile{
-    width: 130px;
-    height: 100px;
+
+  .followme{
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
 
-  .head_name {
-    margin: 0;
-    font-size: 25;
-    font-family: 'DotGothic16', sans-serif;
-    font-weight: bold;
-    background-color: #000000;
-    letter-spacing: 10px;
-    border: 4px solid #ffffff;
-    border-radius: 13px;
-	display: inline-block;
+
+
+.q_5 {
+    border-image-slice: 3;
+    border-image-width: 4;
+    font-size: 23px !important;
 }
 
-  .head_name {
-	
-    margin: 0;
-	color: #ffffff;
-    font-size: 110px;
-    font-family: 'DotGothic16', sans-serif;
-    font-weight: bold;
-    background-color: #000000;
-    letter-spacing: 10px;
-    border: 10px solid #ffffff;
-    border-radius: 50px;
-	margin-bottom: 90px;
-}
-body {
-    font-size: 29px;
-    text-align: center;
-}
-#typed-sample5{
-	font-size: 55px !important;
-	margin-bottom: 50px !important;
+.q_6 {
+  border-image-slice: 3;
+  border-image-width: 4;
+  font-size: 23px !important;
 }
 
-.ggg{
-	font-size: 50px;
+.nes-container.is-rounded.is-dark {
+  border-image-slice: 3;
+  border-image-width: 4;
+  font-size: 30px;
 }
 
-.copytxt {
-	margin: 0px;
-	font-size: 70px;
-	font-weight: bold;
-	display: inline-block;
-	
+.startyesno{
+  text-align: center;
+  font-size: 40px;
+  padding-top: 0px !important;
+}
+.p_start_yesno{
+color: #ffffff;
+margin: 0%;
+margin-top: 210px;
+font-size: 40px;
+text-align: center;
   }
-  .gg{
-	display: none;
-  }
-}
 
-
+.decision_yes_no {
+  font-size: 30px;
+  text-align: center !important;
   
-
-@media screen and (min-width:1024px) {
-.name{
-		font-size: 30px;
-		
-	}
-
-	.ggg{
-		font-size: 20px;
-	}
-	
-
-	
-.followme{
-	width: 500px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #11131f; /* フッターの背景色を設定 */
-    text-align: center;
-    padding: -px; /* 適切なパディングを設定 */
-    color: aliceblue;
-    padding-top: 4px;
-    color: aliceblue;
-    border-top: 5px solid #ffffff;
-
-
-  }
-  ul{
-    font-size: 35px;
-  }
-  .sns {
-    width: 70px;
-    height: 70px;
-    
-  }
-  .sns{
-    vertical-align: bottom;
-  }
-  .svgfile{
-    width: 130px;
-    height: 100px;
-  }
-
-  .head_name {
-    margin: 0;
-    font-size: 25;
-    font-family: 'DotGothic16', sans-serif;
-    font-weight: bold;
-    background-color: #000000;
-    letter-spacing: 10px;
-    border: 4px solid #ffffff;
-    border-radius: 13px;
-	display: inline-block;
 }
 
-  .head_name {
-	
-    margin: 0;
-	color: #ffffff;
-    font-size: 110px;
-    font-family: 'DotGothic16', sans-serif;
-    font-weight: bold;
-    background-color: #000000;
-    letter-spacing: 10px;
-    border: 10px solid #ffffff;
-    border-radius: 50px;
-	margin-bottom: 90px;
+.nes-btn {
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-repeat: stretch;
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #ffffff !important;
+  letter-spacing: 3PX !important;
 }
-body {
-    font-size: 1px;
-    text-align: center;
+
+.gggg{
+  text-align: center !important;
 }
-#typed-sample5{
-	font-size: 30px !important;
-	margin-bottom: 50px !important;
+
+.pcpc{
+  display: none;
 }
-.copytxt {
-	margin: 0px;
-	font-size: 30px;
-	font-weight: bold;
-	display: inline-block;
+
+#yesno1{
+  margin-top: 100px;
+}
+
+}
+  
+  /*PC画面*/
+  @media screen and (min-width: 768px) {
+    main{
+      display: none;
+    }
+    .pcpc{
+      display: block;
+      color: #ffffff;
+      font-size: 50px;
+    }
+    footer{
+      display: none;
+    }
 	
   }
 
 
-  .ggg{
-	display: none;
-	font-size: 20px;
-}
-
-}
