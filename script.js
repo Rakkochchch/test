@@ -96,14 +96,37 @@ document.getElementById("mainclass").style.display ="block";
   function clickDisplayAlert() {
     const p1 = document.getElementById("main22");
     const p2 = document.getElementById("twitterclass");
+    const p3 = document.getElementById("instagramclass");
     if(p1.style.display=="block"){
 		// noneで非表示
 		p1.style.display ="none";
-    p2.style.display ="block";
+        p2.style.display ="block";
+        p3.style.display ="none"
+    }else{
+      // blockで表示
+        p1.style.display ="block";
+        p2.style.display ="none";
+        p3.style.display ="none"
+    }
+      
+  }
+
+
+  document.getElementById("mainclass").style.display ="block";
+  function clickDisplayAlertsns() {
+    const p1 = document.getElementById("main22");
+    const p2 = document.getElementById("instagramclass");
+    const p3 = document.getElementById("twitterclass");
+    if(p1.style.display=="block"){
+		// noneで非表示
+		p1.style.display ="none";
+        p2.style.display ="block";
+        p3.style.display ="none"
     }else{
       // blockで表示
       p1.style.display ="block";
       p2.style.display ="none";
+      p3.style.display ="none"
     }
       
   }
