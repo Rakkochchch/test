@@ -1,0 +1,77 @@
+
+
+
+<div class="form-wrapper">
+    <form
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfxahQSb10nKkpO7WG4eQwmTA-NitXVnbKca26YvQlcWIWUDw/formResponse"
+      id="form">
+      <div class="box">
+        <label for="name">お名前</label>
+        <input type="text" name="entry.1808411649" id="name" placeholder="お名前" required>
+      </div>
+      
+        <p class="box">今回の文化祭はた楽しかった？</p>
+        <div class="flex-box"><input type="radio" name="entry.1220608769" required value="最高！">
+          <p>最高！</p>
+        </div>
+        <div class="flex-box"><input type="radio" name="entry.1220608769" required value="よかった">
+          <p>よかった</p>
+        </div>
+        <div class="flex-box"><input type="radio" name="entry.1220608769" required value="まぁまぁ">
+            <p>まぁまぁ</p>
+          </div>
+          <div class="flex-box"><input type="radio" name="entry.1220608769" required value="…">
+            <p>…</p>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <input type="submit" class="submit-btn">
+    </form>
+    <p class="end-message">お問い合わせありがとうございました</p>
+    <p class="false-message">送信失敗です</p>
+  </div>
+  <style>
+    .end-message {
+  display: none;
+}
+
+.false-message {
+  display: none;
+}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+const form = document.getElementById('form');
+if (form) {
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('POST', 'https://docs.google.com/forms/u/0/d/e/hogehoge/formResponse', true);
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) { // 4はリクエスト完了を意味します
+                document.querySelector(".end-message").style.display = 'block';
+                document.querySelector(".submit-btn").style.display = 'none';
+                // window.location.href = "thanks.html";
+
+                // 以下の行でフォームの入力をリセットします
+                form.reset();
+            }
+        };
+
+        xhr.send(formData);
+    });
+}
+
+});
+</script>
